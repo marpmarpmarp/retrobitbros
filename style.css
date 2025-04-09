@@ -3,6 +3,10 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;    
+    color: #343127;
 }
 
 body {
@@ -50,12 +54,22 @@ footer {
     background-image: url('assets/fade.png');
     background-size:contain;
     background-repeat: no-repeat;
+    color: #343127;
+    opacity: 0.5;
 }
 
 .brands {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .brand {
@@ -67,7 +81,7 @@ footer {
 
 .brand a {
     text-decoration: none;
-    color: #000000;
+    color: #343127;
     text-align: center;
 }
 
@@ -77,5 +91,18 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #000000;
+    color: #343127;
+}
+
+h2 {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: calc(min(8vw, 4em));
+    letter-spacing: -0.065em;
+    margin: 0;
+    padding: 0;
+    color: #343127;
+    mix-blend-mode: multiply;
+    opacity: .9;
 }
