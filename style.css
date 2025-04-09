@@ -22,6 +22,10 @@ header {
     width: 100%;
     max-width: 800px;
     padding-top: 20px;
+    background-image: url('assets/fade.png');
+    background-size:contain;
+    background-repeat: no-repeat;    
+    background-position-y: 90%;
 }
 
 header img {
@@ -43,6 +47,15 @@ footer {
     align-items: center;
     width: 100%;
     max-width: 800px;
+    background-image: url('assets/fade.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .brand {
@@ -52,6 +65,17 @@ footer {
     align-items: center;
 }
 
+.brand a {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
 .brand img {
     width: 75%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
 }
