@@ -144,3 +144,17 @@ h2 {
         flex-direction: column;
     }
 }
+
+.brand-image {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.brand-image:hover {
+    -webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
