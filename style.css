@@ -81,6 +81,11 @@ footer div {
     flex: 1;
 }
 
+.events {
+   padding: 20px 20px 40px 20px;
+   width: 90%;
+}
+
 .brand-container {
     display: flex;
     justify-content: center;
@@ -130,8 +135,8 @@ h2 {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: calc(min(8vw, 4em));
-    letter-spacing: -0.065em;
+    font-size: calc(min(6vw, 2em));
+    letter-spacing: -0.05em;
     margin: 0;
     padding: 0;
     color: #343127;
@@ -166,4 +171,74 @@ h2 {
     transform: rotate(15deg) scale(1.4);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+}
+
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.row {
+    display: flex;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row.header {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+}
+
+.cell {
+    flex: 1;
+    min-width: 100px;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.row:not(.header):hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 600px) {
+    .row.header {
+        display: none;
+    }
+
+    .row:not(.header):hover {
+        background-color: transparent;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .cell {
+        flex: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        text-align: left;
+    }
+
+    .cell::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
 }
